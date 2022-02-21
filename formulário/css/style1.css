@@ -1,0 +1,76 @@
+
+* {
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+
+        rgb(255,203,219),
+        rgb(255,255,0));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+body {
+    text-align: center;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+
+input{
+    width: 500px;
+    height: 30px;
+}
+.input-checkbox, .input-radio{
+    height: 20px;
+}
+
+
+html {
+   color:  black;
+   font-weight: bold;
+}
+
+#submit {
+    display: inline;
+    width: 10%;
+    padding: 0.75rem;
+    background:#5a6170;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+#comments {
+    width: 500px;
+    height: 100px;
+}
+
+.input-checkbox {
+    text-align: inline
+}
+
+.form-select {
+    margin-bottom: auto;
+}
+
+#study {
+    margin: 0 auto;
+    display: block;
+}
+
+#days {
+    margin: 0 auto;
+    display: block;
+    
+}

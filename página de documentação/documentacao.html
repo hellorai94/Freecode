@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Página de documentação</title>
+</head>
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Então_o_que_e_HTML">
+            <header>Então, o que é HTML?</header>
+            <article>
+                <p>HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a 
+                estrutura do seu conteúdo. HTML consiste de uma série de elementos, que você usa para 
+                delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de 
+                determinada maneira. As tags anexas podem transformar uma palavra ou imagem num hiperlink,
+                pode colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por diante. 
+                Por exemplo, veja a seguinte linha de conteúdo:</p>
+
+                <code
+                >Hello é uma gatinha</code>
+
+                <p>Se quiséssemos que a linha permanecesse por si só, poderíamos especificar que é um parágrafo
+                colocando-a em uma tag de parágrafo:</p>
+
+                <!-- aqui tem algo que eu ainda não sei como colocar -->
+
+                <h3>Anatomia de um elemento HTML</h3>
+                <p>As principais partes de um elemento são:</p>
+                <ol>
+                    <li>A tag de abertura: Consiste no nome do elemento (no caso, p), envolvido em parênteses 
+                    angulares de abertura e fechamento. Isso demonstra onde o elemento começa, ou onde seu 
+                    efeito se inicia — nesse caso, onde é o começo do parágrafo.</li>
+                    <li>A tag de fechamento: Isso é a mesma coisa que a tag de abertura, exceto que inclui uma 
+                    barra antes do nome do elemento. Isso demonstra onde o elemento acaba — nesse caso, onde é 
+                    fim do parágrafo. Esquecer de incluir uma tag de fechamento é um dos erros mais comuns de
+                    iniciantes e pode levar a resultados estranhos.</li>
+                    <li>O conteúdo: Esse é o conteúdo do elemento, que nesse caso é apenas texto.</li>
+                    <li>O elemento: A tag de abertura, a de fechamento, e o conteúdo formam o elemento.</li>
+                </ol>
+                <p>Elementos também podem ter atributos, que parecem assim:
+                    <img src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/14/9345/99516bbeb470af58b608d17bb30e53e6/grumpy-cat-attribute-small.png" 
+                    alt="mdn-imagem">
+                </p>
+                <p>Atributos contém informação extra sobre o elemento que você não quer que apareça no conteúdo
+                real. Aqui, class é o nome do atributo e editor-note é o valor do atributo. O atributo 
+                class permite que você forneça ao elemento um identificador que possa ser usado 
+                posteriormente para aplicar ao elemento informações de estilo e outras coisas.</p>
+                <p>Um atributo sempre deve ter:</p>
+                <ol>
+                    <li>Um espaço entre ele e o nome do elemento (ou o atributo anterior, se o elemento já tiver um).</li>
+                    <li>O nome do atributo, seguido por um sinal de igual.</li>
+                    <li>Aspas de abertura e fechamento, envolvendo todo o valor do atributo.</li>
+                </ol>
+
+                <!-- aqui tem algo que eu ainda não sei como colocar-->
+
+                <h3>Aninhando elementos</h3>
+                <p>Você pode colocar elementos dentro de outros elementos também — isso é chamado de 
+                aninhamento. Se quiséssemos afirmar que nosso gato é muito mal-humorado, poderíamos envolver a
+                palavra "muito" em um elemento <strong>, o que significa que a palavra deve ser fortemente 
+                enfatizada:</p>
+
+                <!-- aqui tem algo que eu ainda não sei como colocar-->
+
+                <p>Você precisa, no entanto, certificar-se de que seus elementos estejam adequadamente 
+                aninhados. No exemplo acima, abrimos primeiro o elemento <p>, depois o elemento <strong>; 
+                portanto, temos que fechar primeiro o elemento <strong>, depois o elemento <p>. O código
+                abaixo está incorreto:</p>
+
+                <!-- aqui tem algo que eu ainda não sei como colocar-->
+
+                <p>Os elementos precisam ser abertos e fechados corretamente para que eles estejam claramente 
+                visíveis dentro ou fora um do outro. Se eles se sobrepuserem conforme mostrado acima, seu 
+                navegador tentará adivinhar o que você estava tentando dizer, o que pode levar a 
+                resultados inesperados. Então não faça isso!</p>
+
+                <h3>Elementos vazios</h3>
+                <p>Alguns elementos não possuem conteúdo e são chamados de elementos vazios. Considere o 
+                elemento <img> que temos na nossa página HTML:</p>
+
+                 <!-- aqui tem algo que eu ainda não sei como colocar-->
+
+                <p>Ele contém dois atributos, mas não há tag </img> de fechamento, e não há conteúdo interno. 
+                Isso acontece porque um elemento de imagem não envolve conteúdo para ter efeito em si mesmo.
+                Sua proposta é incorporar uma imagem na página HTML no lugar que o código aparece.</p>
+
+                <h3>Anatomia de um documento HTML</h3>
+                <p>Isso resume o básico dos elementos HTML individuais, mas eles não são úteis por si só.
+                Agora vamos ver como elementos individuais são combinados para formar uma página HTML inteira.
+                Vamos visitar novamente os códigos que colocamos no exemplo de index.html (que vimos no artigo
+                Lidando com arquivos):</p>
+
+                <!-- aqui tem algo que eu ainda não sei como colocar-->
+
+                <p>Aqui nós temos:</p>
+                <ul>
+                    <li><!DOCTYPE html> — o doctype. É a parte inicial obrigatória do documento. Nas névoas do
+                    tempo, quando o HTML era novo (por volta de 1991/2), doctypes eram criados para agir como 
+                    links para um conjunto de regras que a página HTML tinha que seguir para ser considerada 
+                    um bom HTML, o que poderia significar checagem automática de erros e outras coisas úteis.
+                    No entanto, atualmente, eles não fazem muito sentido e são basicamente necessários apenas 
+                    para garantir que o documento se comporte corretamente. Isso é tudo que você precisa saber 
+                    agora.</li>
+                    <li><html></html> — o elemento <html>. Esse elemento envolve todo o conteúdo da página e 
+                    às vezes é conhecido como o elemento raiz</li>
+                    <li><head></head> — o elemento <head>. Esse elemento age como um recipiente de tudo o que você
+                    deseja incluir em uma página HTML que não é o conteúdo que você quer mostrar para quem vê sua 
+                    página. Isso inclui coisas como palavras-chave e uma descrição que você quer que apareça nos 
+                    resultados de busca, CSS para dar estilo ao conteúdo, declarações de conjuntos de caracteres e 
+                    etc.</li>
+                    <li><meta charset="utf-8"> — esse elemento define o conjunto de caracteres que seu 
+                    documento deve usar para o UTF-8, que inclui praticamente todos os caracteres da grande 
+                    maioria dos idiomas escritos. Essencialmente, agora ele pode manipular qualquer conteúdo 
+                    textual que você possa colocar. Não há razão para não definir isso e assim pode ajudar a 
+                    evitar alguns problemas no futuro.</li>
+                    <li><title></title> — o elemento <title>. Ele define o título da sua página, que é o título
+                    que aparece na guia do navegador onde sua página é carregada. Ele também é usado para 
+                    descrever a página quando você a adiciona aos favoritos.</li>
+                    <li><body></body> — o elemento <body>. Contém todo o conteúdo que você quer mostrar ao 
+                    público que visita sua página, seja texto, imagens, vídeos, jogos, faixas de áudio 
+                    reproduzíveis ou qualquer outra coisa.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Imagens">
+            <header>Imagens</header>
+        </section>
+        <section class="main-section" id="Marcando_o_texto">
+            <header>Marcando o texto</header>
+        </section>
+        <section class="main-section" id="Links">
+            <header>Links</header>
+        </section>
+        <section class="main-section" id="Conclusao">
+            <header>Conclusão</header>
+        </section>
+    </main>
+</body>
+</html>
