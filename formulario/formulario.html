@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nunito:ital,wght@1,200&family=Roboto:ital,wght@1,100&family=Source+Serif+4:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="primeira">
+        <header>
+            <h1 id="tittle">🌸 CADASTRO DAS FAMÍLIAS DO PROJETO 🌸</h1>
+            <p id="description">Obrigada por fazer parte do nosso projeto socioeducativo</p><br><br>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nome:</label>
+                <input type="texto" name="name" id="name" class="form-control"
+                    placeholder="Coloque o seu nome aqui, por favor." required />
+                <br><br>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-control"
+                    placeholder="Coloque o seu e-mail aqui, por favor." required />
+                <br><br>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="numero">Idade:</label>
+                <input type="number" name="idade" id="number" min="1" max="16" class="form-group"
+                    placeholder="Insira sua idade aqui" required />
+                <br><br>
+            </div>
+            <div class="form-group">
+                <p>Qual é o seu nível de escolaridade?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Selecione a sua escolaridade:</option>
+                    <option value="analfabeto">Não sabe ler e nem escrever</option>
+                    <option value="fundamental">Fundamental</option>
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior">Ensino Superior</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div><br><br>
+            <div class="form-group">
+                <p>Seus filhos estão estudando?</p>
+                <label><input id="study" name="filhos" value="definitely" type="radio" class="input-radio"
+                        checked />SIM</label><br>
+                <label><input id="study" name="filhos" value="definitely" type="radio" class="input-radio"
+                        checked />NÃO</label>
+            </div><br><br>
+            <div class="form-group">
+                <p>Quantos filhos você tem com idade inferior a 18 anos?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Selecione a quantidade de filhos</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="tree">3 ou mais</option>
+                </select>
+            </div><br><br>
+            <div class="form-group">
+                <p>Quais dias da semana vocês têm disponibilidade para participar do projeto?</p>
+                <label><input id="days" name="days" value="segunda" type="checkbox"
+                        class="input-checkbox" />Segunda</label><br>
+                <label><input id="days" name="prefer" value="quarta" type="checkbox"
+                        class="input-checkbox" />Quarta</label><br>
+                <label><input id="days" name="prefer" value="sexta" type="checkbox"
+                        class="input-checkbox" />Sexta</label><br>
+                <label><input id="days" name="prefer" value="sabado" type="checkbox"
+                        class="input-checkbox" />Sábado</label>
+                <div class="form-group"><br><br>
+                    <p>Alguma sugestão para o projeto?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Coloque as suas sugestões aqui"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Enviar
+                    </button>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
