@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,136 +8,383 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Página de documentação</title>
 </head>
+
 <body>
+    <nav id="navbar">
+        <header>HTML</header>
+        <ul>
+            <li><a class="nav-link" href="#Html_basico">Html Básico</li>
+            <li><a class="nav-link" href="#Então_o_que_e_HTML">Então, o que é HTML?</a></li>
+            <li><a class="nav-link" href="#Imagens">Imagens</a></li>
+            <li><a class="nav-link" href="#Marcando_o_texto">Marcando o texto</a></li>
+            <li><a class="nav-link" href="#Links">Links</a></li>
+            <li><a class="nav-link" href="#Conclusao">Conclusão</a></li>
+            <li><a class="nav-link" href="#Referencia">Referência</a></li>
+        </ul>
+    </nav>
     <main id="main-doc">
+        <section class="main-section" id="Html_basico">
+            <h1>HTML Básico</h1>
+            <p>HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu
+                conteúdo. Por exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com marcadores ou
+                usando
+                imagens e tabelas. Como o título sugere, este artigo fornecerá uma compreensão básica do HTML e suas
+                funções.</p>
+        </section>
+
         <section class="main-section" id="Então_o_que_e_HTML">
             <header>Então, o que é HTML?</header>
             <article>
-                <p>HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a 
-                estrutura do seu conteúdo. HTML consiste de uma série de elementos, que você usa para 
-                delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de 
-                determinada maneira. As tags anexas podem transformar uma palavra ou imagem num hiperlink,
-                pode colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por diante. 
-                Por exemplo, veja a seguinte linha de conteúdo:</p>
-
-                <code
-                >Hello é uma gatinha</code>
-
+                <p>HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a estrutura
+                    do seu conteúdo. HTML consiste de uma série de <a
+                        href=https://developer.mozilla.org/pt-BR/docs/Glossary/Element target="_blank">elementos</a>,
+                    que você usa paradelimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de
+                    determinada maneira. As <a href=https://developer.mozilla.org/pt-BR/docs/Glossary/Tag
+                        target="_blank">tags</a> anexas podem transformar uma palavra ou imagem num hiperlink, pode
+                    colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por diante. Por exemplo, a
+                    seguinte linha de conteúdo:</p>
+                <code class="codes">Hello é uma gatinha</code>
                 <p>Se quiséssemos que a linha permanecesse por si só, poderíamos especificar que é um parágrafo
-                colocando-a em uma tag de parágrafo:</p>
+                    colocando-a em uma tag de parágrafo:</p>
 
-                <!-- aqui tem algo que eu ainda não sei como colocar -->
+                <code class="codes">
+                    &lt;p&gt;Meu gatinho é muito mal humorado&lt;/p&gt;
+                </code>
 
                 <h3>Anatomia de um elemento HTML</h3>
                 <p>As principais partes de um elemento são:</p>
                 <ol>
-                    <li>A tag de abertura: Consiste no nome do elemento (no caso, p), envolvido em parênteses 
-                    angulares de abertura e fechamento. Isso demonstra onde o elemento começa, ou onde seu 
-                    efeito se inicia — nesse caso, onde é o começo do parágrafo.</li>
-                    <li>A tag de fechamento: Isso é a mesma coisa que a tag de abertura, exceto que inclui uma 
-                    barra antes do nome do elemento. Isso demonstra onde o elemento acaba — nesse caso, onde é 
-                    fim do parágrafo. Esquecer de incluir uma tag de fechamento é um dos erros mais comuns de
-                    iniciantes e pode levar a resultados estranhos.</li>
-                    <li>O conteúdo: Esse é o conteúdo do elemento, que nesse caso é apenas texto.</li>
-                    <li>O elemento: A tag de abertura, a de fechamento, e o conteúdo formam o elemento.</li>
+                    <li>A <b>tag de abertura</b>: Consiste no nome do elemento (no caso, p), envolvido em parênteses
+                        angulares de abertura e fechamento. Isso demonstra onde o elemento começa, ou onde seu efeito se
+                        inicia — nesse caso, onde é o começo do parágrafo.</li>
+                    <li>A <b>tag de fechamento</b>: Isso é a mesma coisa que a tag de abertura, exceto que inclui uma
+                        barra antes do nome do elemento. Isso demonstra onde o elemento acaba — nesse caso, onde é fim
+                        do parágrafo. Esquecer de incluir uma tag de fechamento é um dos erros mais comuns de iniciantes
+                        e pode levar a resultados estranhos.</li>
+                    <li>O <b>conteúdo</b>: Esse é o conteúdo do elemento, que nesse caso é apenas texto.</li>
+                    <li>O <b>elemento</b>: A tag de abertura, a de fechamento, e o conteúdo formam o elemento.</li>
                 </ol>
                 <p>Elementos também podem ter atributos, que parecem assim:
-                    <img src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/14/9345/99516bbeb470af58b608d17bb30e53e6/grumpy-cat-attribute-small.png" 
-                    alt="mdn-imagem">
+                    <img src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/14/9345/99516bbeb470af58b608d17bb30e53e6/grumpy-cat-attribute-small.png"
+                        alt="mdn-imagem">
                 </p>
                 <p>Atributos contém informação extra sobre o elemento que você não quer que apareça no conteúdo
-                real. Aqui, class é o nome do atributo e editor-note é o valor do atributo. O atributo 
-                class permite que você forneça ao elemento um identificador que possa ser usado 
-                posteriormente para aplicar ao elemento informações de estilo e outras coisas.</p>
+                    real. Aqui, <code id="texts">class</code> é o nome do atributo e <code id="texts">editor-note</code>
+                    é o valor do atributo. O atributo
+                    <code id="texts">class</code> permite que você forneça ao elemento um identificador que possa ser
+                    usado
+                    posteriormente para aplicar ao elemento informações de estilo e outras coisas.
+                </p>
                 <p>Um atributo sempre deve ter:</p>
                 <ol>
-                    <li>Um espaço entre ele e o nome do elemento (ou o atributo anterior, se o elemento já tiver um).</li>
+                    <li>Um espaço entre ele e o nome do elemento (ou o atributo anterior, se o elemento já tiver um).
+                    </li>
                     <li>O nome do atributo, seguido por um sinal de igual.</li>
                     <li>Aspas de abertura e fechamento, envolvendo todo o valor do atributo.</li>
                 </ol>
 
-                <!-- aqui tem algo que eu ainda não sei como colocar-->
-
                 <h3>Aninhando elementos</h3>
-                <p>Você pode colocar elementos dentro de outros elementos também — isso é chamado de 
-                aninhamento. Se quiséssemos afirmar que nosso gato é muito mal-humorado, poderíamos envolver a
-                palavra "muito" em um elemento <strong>, o que significa que a palavra deve ser fortemente 
-                enfatizada:</p>
+                <p>Você pode colocar elementos dentro de outros elementos também — isso é chamado de
+                    aninhamento. Se quiséssemos afirmar que nosso gato é muito mal-humorado, poderíamos envolver a
+                    palavra "muito" em um elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong">&lt;strong&gt;</a>, o
+                    que significa que a palavra deve ser fortemente
+                    enfatizada:</p>
 
-                <!-- aqui tem algo que eu ainda não sei como colocar-->
+                <code class="codes">
+                    &lt;p&gt;Meu gatinho é &lt;strong&gt; muito mal humorado.&lt;/strong&gt;&lt;/p&gt;
+                </code>
 
-                <p>Você precisa, no entanto, certificar-se de que seus elementos estejam adequadamente 
-                aninhados. No exemplo acima, abrimos primeiro o elemento <p>, depois o elemento <strong>; 
-                portanto, temos que fechar primeiro o elemento <strong>, depois o elemento <p>. O código
-                abaixo está incorreto:</p>
+                <p>Você precisa, no entanto, certificar-se de que seus elementos estejam adequadamente
+                    aninhados. No exemplo acima, abrimos primeiro o elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p">&lt;p&gt;</a>, depois o
+                    elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong">&lt;strong&gt;</a>;
+                    portanto, temos que fechar primeiro o elemento
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong">&lt;strong&gt;</a>,
+                    depois o elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p">&lt;p&gt;</a>. O código
+                    abaixo está incorreto:
 
-                <!-- aqui tem algo que eu ainda não sei como colocar-->
+                    <code class="codes">
+                        &lt;p&gt;Meu gatinho é &lt;strong&gt;muito mal humorado.&lt;/p&gt;&lt;/strong&gt;
+                    </code>
+                    <p>Os elementos precisam ser abertos e fechados corretamente para que eles estejam claramente
+                        visíveis dentro ou fora um do outro. Se eles se sobrepuserem conforme mostrado acima, seu
+                        navegador tentará adivinhar o que você estava tentando dizer, o que pode levar a
+                        resultados inesperados. Então não faça isso!</p>
 
-                <p>Os elementos precisam ser abertos e fechados corretamente para que eles estejam claramente 
-                visíveis dentro ou fora um do outro. Se eles se sobrepuserem conforme mostrado acima, seu 
-                navegador tentará adivinhar o que você estava tentando dizer, o que pode levar a 
-                resultados inesperados. Então não faça isso!</p>
+                    <h3>Elementos vazios</h3>
+                    <p>Alguns elementos não possuem conteúdo e são chamados de elementos vazios. Considere o
+                        elemento <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img">&lt;img&gt;
+                        </a>que temos na nossa página HTML:</p>
 
-                <h3>Elementos vazios</h3>
-                <p>Alguns elementos não possuem conteúdo e são chamados de elementos vazios. Considere o 
-                elemento <img> que temos na nossa página HTML:</p>
+                    <code class="codes">
+                        &lt;img src="imagens/firefox-icon.png" alt="Minha imagem de teste"&gt;
+                    </code>
 
-                 <!-- aqui tem algo que eu ainda não sei como colocar-->
+                    <p>Ele contém dois atributos, mas não há tag <code id="texts">&lt;/img&gt;</code> de fechamento, e
+                        não há conteúdo interno.
+                        Isso acontece porque um elemento de imagem não envolve conteúdo para ter efeito em si mesmo.
+                        Sua proposta é incorporar uma imagem na página HTML no lugar que o código aparece.</p>
 
-                <p>Ele contém dois atributos, mas não há tag </img> de fechamento, e não há conteúdo interno. 
-                Isso acontece porque um elemento de imagem não envolve conteúdo para ter efeito em si mesmo.
-                Sua proposta é incorporar uma imagem na página HTML no lugar que o código aparece.</p>
+                    <h3>Anatomia de um documento HTML</h3>
+                    <p>Isso resume o básico dos elementos HTML individuais, mas eles não são úteis por si só.
+                        Agora vamos ver como elementos individuais são combinados para formar uma página HTML inteira.
+                        Vamos visitar novamente os códigos que colocamos no exemplo de <code
+                            id="texts">index.html</code>(que vimos no artigo <a
+                            href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/Dealing_with_files">Lidando
+                            com arquivos</a>):</p>
 
-                <h3>Anatomia de um documento HTML</h3>
-                <p>Isso resume o básico dos elementos HTML individuais, mas eles não são úteis por si só.
-                Agora vamos ver como elementos individuais são combinados para formar uma página HTML inteira.
-                Vamos visitar novamente os códigos que colocamos no exemplo de index.html (que vimos no artigo
-                Lidando com arquivos):</p>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="utf-8"&gt;<br>
+                    &lt;title&gt;Minha página de teste&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;img src="imagens/firefox-icon.png" alt="minha página de teste"&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;
 
-                <!-- aqui tem algo que eu ainda não sei como colocar-->
 
-                <p>Aqui nós temos:</p>
-                <ul>
-                    <li><!DOCTYPE html> — o doctype. É a parte inicial obrigatória do documento. Nas névoas do
-                    tempo, quando o HTML era novo (por volta de 1991/2), doctypes eram criados para agir como 
-                    links para um conjunto de regras que a página HTML tinha que seguir para ser considerada 
-                    um bom HTML, o que poderia significar checagem automática de erros e outras coisas úteis.
-                    No entanto, atualmente, eles não fazem muito sentido e são basicamente necessários apenas 
-                    para garantir que o documento se comporte corretamente. Isso é tudo que você precisa saber 
-                    agora.</li>
-                    <li><html></html> — o elemento <html>. Esse elemento envolve todo o conteúdo da página e 
-                    às vezes é conhecido como o elemento raiz</li>
-                    <li><head></head> — o elemento <head>. Esse elemento age como um recipiente de tudo o que você
-                    deseja incluir em uma página HTML que não é o conteúdo que você quer mostrar para quem vê sua 
-                    página. Isso inclui coisas como palavras-chave e uma descrição que você quer que apareça nos 
-                    resultados de busca, CSS para dar estilo ao conteúdo, declarações de conjuntos de caracteres e 
-                    etc.</li>
-                    <li><meta charset="utf-8"> — esse elemento define o conjunto de caracteres que seu 
-                    documento deve usar para o UTF-8, que inclui praticamente todos os caracteres da grande 
-                    maioria dos idiomas escritos. Essencialmente, agora ele pode manipular qualquer conteúdo 
-                    textual que você possa colocar. Não há razão para não definir isso e assim pode ajudar a 
-                    evitar alguns problemas no futuro.</li>
-                    <li><title></title> — o elemento <title>. Ele define o título da sua página, que é o título
-                    que aparece na guia do navegador onde sua página é carregada. Ele também é usado para 
-                    descrever a página quando você a adiciona aos favoritos.</li>
-                    <li><body></body> — o elemento <body>. Contém todo o conteúdo que você quer mostrar ao 
-                    público que visita sua página, seja texto, imagens, vídeos, jogos, faixas de áudio 
-                    reproduzíveis ou qualquer outra coisa.</li>
-                </ul>
+                    <p>Aqui nós temos:</p>
+                    <ul>
+                        <li><code id="texts">&lt;!DOCTYPE html&gt;</code> — o doctype. É a parte inicial obrigatória do
+                            documento. Nas névoas do
+                            tempo, quando o HTML era novo (por volta de 1991/2), doctypes eram criados para agir como
+                            links para um conjunto de regras que a página HTML tinha que seguir para ser considerada
+                            um bom HTML, o que poderia significar checagem automática de erros e outras coisas úteis.
+                            No entanto, atualmente, eles não fazem muito sentido e são basicamente necessários apenas
+                            para garantir que o documento se comporte corretamente. Isso é tudo que você precisa saber
+                            agora.</li>
+                        <li><code id="texts">&lt;html&gt;</code> — o elemento <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/html">&lt;html&gt;</a>.
+                            Esse
+                            elemento envolve todo o conteúdo da página e
+                            às vezes é conhecido como o elemento raiz</li>
+                        <li><code id="texts">&lt;head&gt;</code> — o elemento <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/head">&lt;head&gt;</a>.
+                            Esse
+                            elemento age como um recipiente de tudo o que você
+                            deseja incluir em uma página HTML que não é o conteúdo que você quer mostrar para quem vê
+                            sua
+                            página. Isso inclui coisas como <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Glossary/Keyword"> palavras-chave </a>e
+                            uma descrição que você quer que apareça nos
+                            resultados de busca, CSS para dar estilo ao conteúdo, declarações de conjuntos de caracteres
+                            e
+                            etc.</li>
+                        <li><code id="texts">&lt;meta charset="utf-8"&gt;</code> — esse elemento define o conjunto de
+                            caracteres que seu
+                            documento deve usar para o UTF-8, que inclui praticamente todos os caracteres da grande
+                            maioria dos idiomas escritos. Essencialmente, agora ele pode manipular qualquer conteúdo
+                            textual que você possa colocar. Não há razão para não definir isso e assim pode ajudar a
+                            evitar alguns problemas no futuro.</li>
+                        <li><code id="texts">&lt;title&gt;&lt;/title&gt;</code> — o elemento <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/title">&lt;title&gt;</a>.
+                            Ele define o título da sua página, que é o título
+                            que aparece na guia do navegador onde sua página é carregada. Ele também é usado para
+                            descrever a página quando você a adiciona aos favoritos.</li>
+                        <li><code id="texts">&lt;body&gt;&lt;/body&gt;</code> — o elemento <a
+                                href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/body">&lt;body&gt;</a>.
+                            Contém todo o conteúdo que você quer mostrar ao
+                            público que visita sua página, seja texto, imagens, vídeos, jogos, faixas de áudio
+                            reproduzíveis ou qualquer outra coisa.</li>
+                    </ul>
             </article>
         </section>
         <section class="main-section" id="Imagens">
             <header>Imagens</header>
+            <article>
+                <p>Vamos voltar nossa atenção para o elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img">&lt;img&gt; </a>novamente:
+                </p>
+
+                <code class="codes">
+                    &lt;img src="imagens/firefox-icon.png" alt="Minha imagem de teste"&gt;
+                </code>
+                <p>Como dissemos antes, isso incorpora uma imagem na nossa página na posição que aparece. Isso é feito
+                    pelo atributo <code id="texts">src</code> (<i>source</i>), que contém o caminho para nosso arquivo
+                    de
+                    imagem.</p>
+
+                <p>Incluímos também um atributo <code id="texts">alt</code> (<i>alternative</i>). Neste atributo, você
+                    especifica um texto descritivo para usuários que não
+                    podem ver a imagem, possivelmente devido aos seguintes motivos:</p>
+
+                <ol>
+                    <li>Eles são deficientes visuais. Usuários com deficiências visuais significativas costumam usar
+                        ferramentas chamadas
+                        leitores de tela para ler o texto alternativo para eles.</li>
+                    <li>lgo deu errado, fazendo com que a imagem não seja exibida. Por exemplo, tente alterar
+                        deliberadamente o caminho dentro
+                        do atributo <code id="texts">src</code> para torná-lo incorreto. Se você salvar e recarregar a
+                        página, você deve ver algo assim no lugar da
+                        imagem:</li>
+                </ol>
+                <hr>
+                <p>As palavras-chave para o texto alternativo são "texto descritivo". O texto alternativo que você
+                    escreve deve fornecer ao
+                    leitor informações suficientes para ter uma boa ideia do que a imagem mostra. Neste exemplo, nosso
+                    texto "Minha imagem teste"
+                    não é bom para todos. Uma alternativa muito melhor para o nosso logotipo do Firefox seria "A logo do
+                    Firefox: uma raposa em
+                    chamas envolvendo a Terra."</p>
+
+                <p>Tente criar um texto alternativo melhor para sua imagem agora.</p>
+            </article>
         </section>
         <section class="main-section" id="Marcando_o_texto">
             <header>Marcando o texto</header>
+            <article>
+                <p>Essa seção abordará alguns dos elementos HTML essenciais que você usará para marcar o texto.</p>
+                <h3>Cabeçalhos</h3>
+                <p>Os elementos de cabeçalhos permitem especificar que certas partes do seu conteúdo são títulos ou
+                    subtítulos. Da mesma forma que um livro tem o título principal e os capítulos possuem títulos e
+                    subtítulos, um documento HTML também tem. HTML contém 6 níveis de título, <code><a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">&lt;h1&gt;
+                            (en-US)</a></code> - <code><a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">&lt;h6&gt;
+                            (en-US)</a></code>, embora você normalmente só use de 3 a 4:</p>
+
+                <code class="codes">&lt;p&gt;&lt;h1&gt;Meu título principal&lt;/h1&gt;<br>
+                    &lt;h2&gt;Meu título de alto nível&lt;/h2&gt;<br>
+                    &lt;h3&gt;Meu subtítulo&lt;/h3&gt;<br>
+                    &lt;h4&gt;Meu segundo subtítulo&lt;/h4&gt;&lt;/p&gt;
+                </code>
+
+                <p>Agora, tente adicionar um título adequado à sua página HTML logo acima do elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img">&lt;img&gt;</a>.</p>
+
+                <h3>Parágrafo</h3>
+
+                <p>Como explicado acima, os elementos <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p">&lt;p&gt;</a> são para conter
+                    parágrafos de texto; você os usará com frequência ao marcar um conteúdo de texto regular:</p>
+
+                <code class="codes">
+                    &lt;p&gt;Este é um parágrafo simples&lt;/p&gt;
+                </code>
+
+                <p>Adicione seu texto de exemplo (você o obteve em <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/com_que_seu_site_vai_parecer"
+                        target="_blank">Como será o seu site?</a>) Em um ou alguns parágrafos, colocados diretamente
+                    abaixo do seu elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img">&lt;img&gt;</a>.</p>
+
+                <h3>Listas</h3>
+
+                <p>Muito do conteúdo da web é de listas e o HTML tem elementos especiais para elas. Listas de marcação
+                    sempre consistem em pelo menos 2 elementos. Os tipos mais comuns de lista são ordenadas e não
+                    ordenadas:</p>
+
+                <ol>
+                    <li>Listas não ordenadas são para listas onde a ordem dos itens não importa, como uma lista de
+                        compras, por exemplo.Essas são envolvidas em um elemento <a
+                            href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul">&lt;ul&gt;</a>.</li>
+                    <li>Listas Ordenadas são para listas onde a ordem dos itens importa, como uma receita. Essas são
+                        envolvidas em um elemento <a
+                            href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol">&lt;ol&gt;</a>.</li>
+                </ol>
+
+                <p>Cada item dentro das listas é posto dentro de um elemento <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/li">&lt;li&gt;</a> (item de
+                    lista).</p>
+
+                <p>Por exemplo, se nós quisermos tornar uma parte de um parágrafo numa lista: </p>
+                <code class="codes">
+                    &lt;p&gt;Na Mozilla, somos uma comunidade global de tecnólogos, pensadores e construtores<br>
+                    trabalhando juntos ... &lt;/p&gt;
+                </code>
+                <p>Nós podemos fazer assim:</p>
+
+                <code class="codes">
+                    <pre>
+                    &lt;p>Na Mozilla, somos uma comunidade global de &lt;/p&gt;    
+
+
+                    &lt;ul&gt;
+                        &lt;li&gt;tecnólogos&lt;/li&gt;<br>
+                        &lt;li&gt;pensadores&lt;/li&gt;<br>
+                        &lt;li&gt;construtores&lt;/li&gt;
+                    &lt;/ul&gt;
+
+
+                    &lt;p>trabalhando juntos ... &lt;/p&gt;
+                    </pre>
+                </code>
+
+                <p>Tente adicionar uma lista ordenada ou não ordenada à sua página de exemplo.</p>
+
+            </article>
         </section>
         <section class="main-section" id="Links">
             <header>Links</header>
+            <article>
+                <p>Links são muito importantes — eles são o que faz da web ser de fato uma REDE! Para adicionar um link,
+                    precisamos usar um elemento simples — <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a">&lt;a&gt;</a> — "a" é a forma
+                    abreviada de "âncora". Para transformar o texto do seu parágrafo em um link, siga estas etapas:</p>
+
+                <ol>
+                    <li>Escolha algum texto. Nós escolhemos o texto "Mozilla Manifesto".</li>
+                    <li>Envolva o texto em um elemento <a
+                            href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a">&lt;a&gt;</a> , assim:
+                        <code class="codes">
+                            &lt;a&gt;Mozilla Manifesto&lt;/a&gt;
+                        </code>
+                    </li>
+                    <li>Dê ao elemento &lt;a&gt; um atributo href, assim:
+                        <code class="codes">
+                            &lt;a href=""&gt;Mozilla Manifesto&lt;/a&gt;
+                        </code>
+                    </li>
+                    <li>Preencha o valor desse atributo com o endereço da Web que você deseja vincular o link:</li>
+                    <code class="codes">
+                        &lt;a href="https://www.mozilla.org/pt-BR/about/manifesto/"&gt;Mozilla Manifesto&lt;/a&gt;
+                    </code>
+                </ol>
+
+                <p>Você pode obter resultados inesperados se omitir a parte <code id="texts">https://</code> ou o <code
+                        id="texts">http://</code>, o chamado protocolo, no começo do endereço web. Então depois de criar
+                    um link, clique nele para ter certeza de que ele está indo para onde você deseja.</p>
+                <p>Adicione um link em sua página agora, se ainda não tiver feito isso.</p>
+            </article>
         </section>
         <section class="main-section" id="Conclusao">
             <header>Conclusão</header>
+            <article>
+                <p>Se você seguiu todas as instruções neste artigo, você deve terminar com uma página que pareça algo do
+                    tipo (você também pode
+                    <a href="https://mdn.github.io/beginner-html-site/" target="_blank">vê-la aqui</a>):
+                </p>
+                <img src="https://mdn.mozillademos.org/files/9351/finished-test-page-small.png"
+                    alt="imagem do site feito no tutorial">
+
+                <p>Se você ficar emperrado, pode sempre comparar seu trabalho com nosso <a href="https://github.com/mdn/beginner-html-site/
+                    blob/gh-pages/index.html" blank="_target">código de exemplo finalizado</a> no Github.</p>
+
+                <p>Aqui, nós só arranhamos na superfície do HTML. Para descobrir mais, vá a nossa <a href="https://developer.mozilla.org/pt-
+                    BR/docs/Aprender/HTML" target="_blank">Estruturando a web com HTML.</a></p>
+            </article>
         </section>
+        <section class="main-section" id="Referencia">
+            <header>Referências</header>
+            <article>
+                <ul>
+                    <li>Todos os documentos dessa página foram retirados do <a
+                            href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics#ent%C3%A3o_o_que_%C3%A9_html"
+                            target="_blank">MDN.</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <footer>
+            &copy 2022 - Site desenvolvido por <a href="https://github.com/hellorai94">Raissa Carneiro </a> ☘️
+        </footer>
+
     </main>
 </body>
+
 </html>
